@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E9EFEC;
+  color: #333;
+  line-height: 1.6;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Container Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5em;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #6A9C89;
+  max-width: 500px;
+  margin: 3rem auto;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Content inside the card */
+.card-content {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.card-content h2 {
+  color: #16423C;
+  margin-bottom: 0.5em;
+}
+
+.card-content p {
+  margin: 0.5em 0;
+  color: #5f6368;
+}
+
+/* Transfer Button and Input Styling */
+.transfer-container {
+  display: flex;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.address-input {
+  flex-grow: 1;
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 1em;
+}
+
+.transfer-button {
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #16423C;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 300ms, box-shadow 300ms;
+}
+
+.transfer-button:hover {
+  background-color: #22524b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Token details styling */
+.token-details {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+.token-details p {
+  margin: 0.5em 0;
+}
+
+/* Balance styling */
+.balance {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #34a853;
+  margin: 1em 0;
+}
+
+/* Optional additional styles for clarity */
+.read-the-docs {
+  color: #888;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+.transfer-button[disabled] {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.transfer-button[disabled]:hover {
+  box-shadow: none;
+}
