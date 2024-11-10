@@ -33,5 +33,5 @@ The system consists of the following main components:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Sapuna/NFT-Ticket.git
-   cd NFT-Ticket
+   https://github.com/Sapuna/Reward-Token-Repo.git
+   cd Reward-Token-Repo
